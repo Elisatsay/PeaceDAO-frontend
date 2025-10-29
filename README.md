@@ -30,14 +30,14 @@ Set these environment variables in `.env.local` (or your hosting provider):
 
 1. Import this repository into Vercel.
 2. In **Project Settings → Environment Variables**, add every key from `.env.example`:
-   - `NEXT_PUBLIC_WC_PROJECT_ID`
-   - `NEXT_PUBLIC_RPC_BSC`
-   - `NEXT_PUBLIC_PEACE_FUND`
-   - `NEXT_PUBLIC_TOKEN`
-   - `NEXT_PUBLIC_GUILD_LINK`
-   - `NEXT_PUBLIC_TG_PUBLIC`
-   - `NEXT_PUBLIC_TG_VERIFIED`
-   - `NEXT_PUBLIC_TWITTER`
+   - `NEXT_PUBLIC_WC_PROJECT_ID=afea209f54093e07eb4f30a8307f816f
+   - `NEXT_PUBLIC_RPC_BSC=https://bsc-dataseed.binance.org
+   - `NEXT_PUBLIC_PEACE_FUND=0x071B1baf97D85a70A6Ca786E7Fe90b45f50464e5
+   - `NEXT_PUBLIC_TOKEN=0x4444def5cf226bf50aa4b45e5748b676945bc509
+   - `NEXT_PUBLIC_GUILD_LINK=https://guild.xyz/world-peace-dao
+   - `NEXT_PUBLIC_TG_PUBLIC=https://t.me/WorldPeace_BNB
+   - `NEXT_PUBLIC_TG_VERIFIED=https://t.me/+i-dpunM-luk1ZjRl
+   - `NEXT_PUBLIC_TWITTER=https://x.com/WorldPeace_BNB
 3. Redeploy so the new environment variables are available to the build and runtime.
 4. After the deployment finishes:
    - Open `/api/health` on your deployed domain and confirm the JSON response includes `{"ok":true}`.
